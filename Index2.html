@@ -277,20 +277,92 @@
     </label>
 </p>
 <br>
-<p> <label > Curso llevados </label>
- <br>
-   <imput type="checkbox" name="cursos" value="matematica" id="matematica" >
-      <la for="matematica"> Matematica </label> <br>
-   <imput type="checkbox" name="cursos" value="matematica" id="matematica" >
-      <la for="matematica"> Lenguaje DSS </label> <br>
-   <imput type="checkbox" name="cursos" value="matematica" id="matematica" >
-      <la for="matematica"> Introduccion investigacion </label> <br>
-   <imput type="checkbox" name="cursos" value="matematica" id="matematica" >
-      <la for="matematica"> Nuevas tendencias </label> <br>
+<!-- GESTION DE FORMULARIOS-->
+<div style="font-size:30px" >
+
+  <form  action="TODOSOBREMI.html" method="post">
+    <h1>FORMULARIO DE INSCRIPCION</h1>
+  <label > DATOS PERSONALES</label>
+  <br>
+  
+  <p><label for="nombre">  NOMBRE: <input type="text" id="nombre" autofocus style="font-size:25px ;">      </label> </p> 
+  <p><label   for="apellido"> APELLIDO: <input type="text " id="apellido" style="font-size:25px" > </label> </p>
+  <p><label   for="edad"> EDAD: <input type="text " id="edad" style="font-size:25px"> </label> </p>
+  <p><label   for="observacion"> OBSERVACION:    <textarea  id="observacion"   
+                                                  style="font-size:25px ; height:180px;
+                                                          width:580px ;" > </textarea></label> </p>
+  
+  <p><label> Estatura :
+    <select id="estatura" style="font-size:25px">
+        <option value="menos de 1,50 mts ">1,50 mts</option>
+        <option value="1,51 a 1,60">1,51 a 1,60 mts</option>
+        <option value="1,61 a 1,70">1,61 a 1,70 mts</option>
+        <option value="mas de 1,70">más de 1,70 mts</option>
+      </select>
+    </label></p>
      
+      <p><label>Cursos llevados:</label></p>
+      <input type="checkbox" name="cursos" value="Matematica">
+      <label>Matematica</label><br>
+      <input type="checkbox" name="cursos" value="Fisica">
+      <label>Fisica</label><br>
+      <input type="checkbox" name="cursos" value="Quimica">
+      <label>Quimica</label><br>
+      <input type="checkbox" name="cursos" value="Algoritmos">
+      <label>Algoritmos</label><br>
+  
+      <p><label>Ciclo actual</label></p>
+      <input style="scale:1.5 ;" type="radio" name="ciclo" value="Primero">
+      <label>Primero</label><br>
+      <input style="scale:1.5 ;" type="radio" name="ciclo" value="Segundo">
+      <label>Segundo</label><br>
+      <input style="scale:1.5 ;" type="radio" name="ciclo" value="Tercero">
+      <label>Tercero</label><br>
+      <input style="scale:1.5 ;" type="radio" name="ciclo" value="Cuarto">
+      <label>Cuarto</label><br>
+      <input style="scale:1.5 ;" type="radio" name="ciclo" value="Quinto">
+      <label>Quinto</label><br>
+      <input style="scale:1.5 ;" type="radio" name="ciclo" value="Sexto">
+      <label>Sexto</label>
+  
+      <br>
+      <label for="fecha"> SELECCIONE FECHA: 
+          <input style="font-size:25px" type="date" name="fecha" id="fecha">
+      </label>
+
+      <br><br>
 
 
-</p>
+      <label for="clave"> SELECCIONE CLAVE:
+          <input style="font-size:25px" type="password" name="clave" id="clave">
+      </label>
+   
+      <br><br>
+
+      <label for="resetear"> SELECCIONE CLAVE:
+        <input style="font-size:25px" type="reset" name="resetear" id="resetear" autofocus
+        minlength="5" maxlength="10">
+        
+    </label>
+
+
+     <br><br>
+
+
+      <label for="email"> Ingrese Email:
+        <input style="font-size:25px" type="email" name="correo" id="email" placeholder="@certus.edi.pe"> 
+    </label>
+
+
+  
+  
+  <button type="submit" style="font-size:30px ;" > enviar </button>
+
+
+
+
+
+
 
 
 
