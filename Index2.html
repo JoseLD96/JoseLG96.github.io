@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos1.css">
+    <script type="text/javascript" src="SCRIPT1.js"> </script>
 
     <title>instituto certus- PAGINA CON ccs</title>
 </head>
@@ -354,15 +355,50 @@
     </label>
 
 
+
+
+<div id="resultado" style="font-size: 30px" > Contenedor Resultado de Java script </div>
+  <div id="resultado" style="font-size: 30px">
+ <p> OPERACION SUMA</p>
+
+</div>
+
+<script>
+  window.alert("bienvenidos"); // comando de windows
+  /* javascript acepta los 2 tipos de comentarioas */
+  var valor1 = 10;   var valor2 = 60;
+  var suma = valor1 +valor2;   var resta = valor1 -valor2;
+  document.write("<br> <br><br>");
+
+  console.log("El valor de suma es ",valor1," con ",valor2,"es :",suma);
+  console.log("El valor de resta es  ",valor1," con ",valor2,"es :",resta);
+  document.getElementById('resultado').innerHTML=
+  "El valor de la suma de "+valor1+" con "+valor2 +" es 1"+suma+ "<br>"
+  + "El valor de la resta de "+valor1+" con "+valor2 +" es 1"+resta;
+
+
+</script>
   
   
+
   <button type="submit" style="font-size:30px ;" > enviar </button>
 
 
 
 
 
+<section>
 
+  <h1 style="font: size 40px;"> MANIPULACION DEL DOM </h1>
+  <P id="ejmDOM1" style="font-size: 25px;"></P>
+   Este es un texto inicial a aplicar dom
+  </p>
+
+  <button style="font-size: 25px;"
+       onclick="FcambioColor()"> CAMBIO COLOR
+  </button>
+
+</section>
 
 
 
