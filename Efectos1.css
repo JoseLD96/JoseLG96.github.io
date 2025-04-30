@@ -1,186 +1,204 @@
-/* SELECTOC CON SU BLOQUE DE DECLARACIONES */ 
-h2 {  /* este estilo afecta a todos los h2 en index2.thml */ 
-    font-size: 4em; 
-    color: rgb(255, 123, 0);
-    background-color: rgb(144, 223, 16);  
-}
+h2 { /* este estilo afecta a todos los  de index2.html */
 
-.textoanaranjado { /* clase css que aplica color anaranjad y fuentes lucidaSAns */ 
-    color: rgb(243, 158, 0);
+    font-size: 60px;
+    color: rgb(24, 24, 219);
+    background-color: aqua;
+}
+.textomorado { /* clase css que aplica color morado y fuente lucida sans */
+    color: blueviolet;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
-.claseContenedorDv1 { /* afectara a algunos contenedores Div */ 
+.claseContenedorDiv1 { /* Afectara a algunos contenedores div */
     font-size: 40px;
-     width: 800px;
+    width: 800px;
     height: 600px;
-    background-color: rgb(17, 240, 165);
+    background-color: darkgreen;
+
 
 }
 
-
-#fondoazul { /* identificador que solo afecta a una etiqueta */ 
-    background-color: rgb(68, 1, 252);
-    font-size: 45px;
+#fondonaranja { /* Afectara a una etiqueta */
+    background-color: gold;
+    font-size: 30px;
     text-align: center;
 }
-.textoanaranjado:hover { 
-    background-color: brown;
-     color: rgb(236, 221, 15);
+
+.textomorado:hover{
+    background-color: rgb(47, 16, 226);
+    color: coral;
+
 
 }
+.claseContenedordiv1::first-letter{ /* Afectara solo a la primera letra del bloque */
 
-.claseContenedorDv1::first-letter { 
-    /* seudoelemento que afecta a la letra inicial */ 
-    font-size: 80px;
-    color: rgb(241, 218, 7);
+    font-size: 50px;
+    color: chartreuse;
 }
+.clase_Static {
+    font-size: 20px;
+    background-color: aqua;
+    position:static;  
+    margin-top: 0px;
+   margin-left:20px ;
+   margin-right:80px; 
+}
+
+.clase_Static2 {
+    font-size: 20px;
+    background-color: aqua;
+    position:static;  
+    top: 20px;  /* esto no funciona en static */
+    left:80px ;  /* esto no funciona en static */
+    right:200px;  /* esto no funciona en static */
+    
+}
+
+.clase_Relative{
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+}
+.clase_Relative:hover {
+    position:relative; 
+    top: 100px;
+    left: 100px;
+    z-index: -5;
+    /* z-index para colocar adelante o atras en profundidad respecto a otro elemento  */
+}
+
+.clase_Relative2{
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+}
+.clase_Relative2:hover {
+    position:relative; 
+    margin-top: 100px;
+    margin-left: 100px;
+    
+    
+}
+
 .clase_absolute {
     font-size: 20px;
-    background-color: coral;
+    background-color:chartreuse ;
     height: 250px;
     width: 200px;
     position: absolute;
-    top: 300px;
-    left: 600px;
+    top: 500px;   /* de arriba  hacia abajo, osea baja */
+    left: 100px;
+    z-index: -10;
+
 }
-.clase_relative {
+
+.clase_Relative3 {
     font-size: 20px;
-    background-color: rgb(26, 228, 8);
+    background-color:chartreuse ;
     height: 250px;
     width: 200px;
     position: relative;
 
 }
 
-.clase_relative3 {
+.clase_AbsoluteRelative {
     font-size: 20px;
-    background-color: rgb(26, 228, 8);
+    background-color:chartreuse ;
     height: 200px;
     width: 150px;
     position: absolute;
-    bottom: 300px;
+    bottom: 300px;  /* de abajo hacia arriba, osea sube */
     left: 600px;
+    z-index: -5;
 
 }
-.clase_fixed {
-    height: 200px;
-    width: 150px;
-    position: fixed ;
-    left: 500px;
+
+
+.clase_Fixed {
+    height: 320px;
+    width: 300px;
+    position: fixed;
+    left: 600px;
     bottom: 300px;
-     z-index: -10;
+    z-index: -10;
+
 }
 
 .marca_agua {
-opacity: 0.3;
-pointer-events: none;
-z-index: 10;
-
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 10;
 
 }
 
-.clase_sticky {
-    position: sticky;
-    font-size: 400px;
+.clase_Sticky {
+    position:sticky;
+    font-size: 40px;
     top: 0px;
-    left: 600px;
+    left:40px;
     height: 300px;
-}
-
-.bloque { /*estilo display por defecto*/
-    background-color: currentColor;
-    font-size: 20px;
-    margin: 20px;
-    color: blueviolet;
-    }
-
-.tipoinlineblock  { /*estilo display */
-background-color: darkolivegreen(255 , 47,0);
-font-size: 30px;
-margin:10px ;
-color: forestgreen (127, 255, 185);
-display: inline-block;
-width: 500px; 
 
 }
 
-
-.enlinea { /*estil display enline */
-    background-color: darkgreen;
-    display: inline;
+.tipoinlineblock { /estilo disply inline/
+    background-color: brown;
     font-size: 30px;
-    margin: 2px;
-    color: rgb(12, 94, 245);
-    width: 40px;
-    height: 41px;
+    margin: 10px;
+    color: blue;
+    display:inline-block;
+    width: 500px;
 
-    }
-    .tiponone { /*estilo display none */
-        background-color: coral;
-        font-size: 20px;
-        margin: 20px;
-        color: darkolivegreen;
-        display: none;
-
-    }
-
-    .tipohidden { /*estilo display hidden */
-        background-color: coral;
-        font-size: 20px;
-        margin: 20px;
-        color: darkolivegreen;
-        display: hidden;
-
-    }
-    .tipoflex {
-        display: flex;
-        background-color: aqua;
-        align-items:center ;
-        justify-content: space-between;
-        
-        }
-
-
-
-        .claseNav {
-            background-color: darkred;
-            font-size: 30PX;
-            padding-inline: 0px;
-            color: azure;
-            display: inline;
-            list-style-type: none;
-
-        }
-
-
-.clasenav a:hover {
-    background-color: chartreuse;
 }
 
-.clasenav ul {
+.enlinea {/estilo display inline/
+background-color: chocolate;
+display: inline;
+font-size: 30px;
+margin: 2px;
+color: beige;
+width: 80px;
+height:40px;
+}
+
+.bloque{/estillo display por defecto/
+    background-color:blue;
+  font-size: 20px;
+  margin: 20px;
+  color: aquamarine;
+  }
+  .tiponone{/estillo display por none/
+    background-color:blue;
+  font-size: 20px;
+  margin: 20px;
+  color: aquamarine;
+  display: none;
+  }
+  .tipohidden{/estillo display hidden/
+    background-color:blue;
+  font-size: 20px;
+  margin: 20px;
+  color: aquamarine;
+  display: hidden;
+  }
+  .tipoflex{
+    display: flex;
+    background-color:rgb(156, 156, 248);
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .claseNav  {
+    background-color: coral;
+    font-size: 30px;
+    padding-inline: 0px;
+    color: black;
+    display: inline;
     list-style-type: none;
-    display: none;
-    margin: 6px 11px;
-    padding: 0px;
+  }
 
-}
-
-.clasenav >li  {
-  float: left;
-}
-
-.clasenav li ul {
-    list-style-type: none;
-    display: none;
-    margin: 0px;
-    padding: 140px;
-    background-color: rgb(243, 210, 24);
-
-}
-
-.clasenav li:hover>ul {
-    display: block;
-    background-color: rgb(235, 158, 44);
-}
+  .claseNav a:hover{
+    background-color: rgb(63, 170, 241);
+  }
